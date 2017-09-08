@@ -1,0 +1,60 @@
+*{margin:0 auto; padding:0;font-family: 'Roboto', sans-serif; text-align: left}  /* Roboto para todo el doc */
+
+body { background: #d5d5d5; }
+
+.main-view { width: 975px; height: 300px; margin-top: 40px;margin-bottom: 40px;}
+
+.main-image { height: 300px; width: 420px; float: left;}
+.main-image img{ height: 300px; width: 420px; float: left; }
+.main-image i { position: absolute;top:2%;left:90%; font-size: 35px; -webkit-text-stroke-color: #ffffff;-webkit-text-stroke-width: 2px;color: rgba(0,0,0,0.5);cursor: pointer; z-index: 999 }
+
+.main-title { width: 555px;float: right;height: 75px; background: #ffffff;}
+.main-title h1{ margin: 0;font-size: 16px ; padding:10px 0 10px 10px;color:#1ea7dd;font-weight: normal; }
+.main-title i { color: #999; padding-left: 10px }
+
+.main-desc { width: 555px;float: right;height:150px; background: #ffffff;}
+.main-desc .desc { font-size: 15px ;padding:0 0 0 10px; }
+.main-desc .price { font-size: 25px ;padding:30px 0 0 10px; }
+
+.main-foot { width: 555px;float: right;height: 75px; background:#e6e6e6; }
+.main-foot .contact button { background: none!important; border: none; cursor: pointer; padding: 0; outline:none;} /* Quitar estilos al boton */
+.main-foot .contact button { font-size: 18px ;padding:0 0 0 10px;color:#1ea7dd; text-align: right; padding: 0 20px 0 0; font-weight: bold; float:right; line-height: 75px} /* Float para q no se superponga con el UL */
+.main-foot li { list-style: none; display: inline-block;padding: 0 0 0 10px; float:left;line-height: 75px; font-weight: bold}
+li + li::before { content: "\00a0"; }
+
+.super-destacado { position: absolute;top:4%;width: 155px;height: 28px;background: #8359AB; z-index: 999 }
+.super-destacado p { font:17px; color:#fff; padding: 0 0 0 5px; line-height: 28px; } /* Para no usar position absolute + left + right */
+
+.price {font-size: 28px; font-weight: bolder; padding-top: 20px}
+.price #editable {text-shadow: 0px .5px, .5px 0px, .5px .5px; }
+.price #medidas {color:#1ea7dd; font-size: 14px}
+.price #metros {color:#1ea7dd; font-size: 17px; font-weight: bold}
+
+/* Le doy opacidad negra al contender de la foto para opacarla un poco */
+img { opacity: .7;z-index: -1}
+.main-image {background: #000!important;}
+/*---------------------------------------------------------------------*/
+
+/* Responsive */
+@media screen and (max-width: 910px) {
+	.main-view { width:420px; height: 530px;  }
+	.main-title h1{ font-size: 20px ; font-weight: normal }
+	.main-title { width: 420px;}
+	.main-desc { width: 420px; height: 95px; z-index: 999; }
+	.main-foot { width: 420px; background: #ffffff; height: 55px }
+	.main-foot .contact button { font-size: 16px; }
+	.main-desc .price { position: absolute; top: 223px;z-index: 999; font-size: 37px; color: #ffffff; font-weight: bold }
+	.main-desc .price #medidas {display: none;}
+	.main-desc .price #metros {display: none;}
+	.main-foot ul { color:#ffffff; position: absolute; z-index: 999; top: 275px; font-weight: normal}
+	.main-title {height: 100px; }
+
+}
+
+/* More Responsive */
+@media screen and (max-width: 374px) {
+	/*#main-view {width:320px;}
+	#img img{width: 318px;}*/
+}
+
+
