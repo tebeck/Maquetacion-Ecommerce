@@ -1,6 +1,6 @@
 
 # Maquetacion HTML - E-COMMERCE
-### HTML5 - CSS3 - jQuery - LocalStorage
+### HTML5 - CSS3 - jQuery - LocalStorage - Responsive design
 
 
 ![alt text](screenshots/1.png "Description goes here")
