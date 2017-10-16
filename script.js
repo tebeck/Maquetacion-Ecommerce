@@ -10,19 +10,21 @@
 
 $(document).ready(function() {
 
-  var getColour;
+  var getColor;
   if (localStorage.getItem('background') !== null) {
-    getColour = localStorage.background;
-    $('#fav').css('color', getColour);
+    getColor = localStorage.background;
+    $('#fav').css('color', getColor);
   }
 
   $('#fav').on('click', function() {
-    if (getColour == 'rgba(0,0,0,0.5)') {
-      getColour = 'red';
+    $('#fav').css('color', 'red');
+    localStorage.setItem('background', 'red');
+    if (getColor == 'rgba(0,0,0,0.5)') {
+      getColor = 'red';
       $('#fav').css('color', 'red');
       localStorage.setItem('background', 'red');
     } else {
-      getColour = 'rgba(0,0,0,0.5)';
+      getColor = 'rgba(0,0,0,0.5)';
       $('#fav').css('color', 'rgba(0,0,0,0.5)');
       localStorage.setItem('background', 'rgba(0,0,0,0.5)');
     }
